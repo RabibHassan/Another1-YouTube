@@ -1,0 +1,202 @@
+.header{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 16px;
+
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(240, 240, 240);
+    border-bottom-width:1px ;
+    z-index: 100;
+}
+
+.sidebar{
+    background-color: white;
+    position: fixed;
+    top:55px; 
+    left:0;
+    width:72px;
+    bottom:0;
+}
+.sideicon{
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-link:hover{
+    background-color: rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+.sidebar-link:active{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.sidebar-link{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 76px;
+    font-size: 10px;
+    font-family: Roboto;
+    font-weight: 400;
+    border-radius:10px ;
+}
+.right-section{
+    width:182px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.right-icon5{
+    height: 24px;
+    width: 24px;
+}
+.create, .YouTube-Apps,.notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 10px;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.right-icon6{
+    height: 24px;
+    width: 24px;
+}
+.right-icon7{
+    position: relative;
+    height: 24px;
+    width: 24px;
+}
+.notification{
+    position: relative;
+}
+.noti-num{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color: rgb(204,0,0);
+    color: white;
+    font-size: 11px;
+    font-family: 400;
+    top:-2px;
+    right:-5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.right-icon8{
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+}
+
+.middle-section{
+    display: flex;
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    align-items: center;
+}
+.search-bar{
+    flex:1;
+    width:0;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204,204,204);
+    border-radius: 2px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    box-shadow: rgb(238, 238, 238);
+}
+.mid-but3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(247,247,247);
+    height:40px;
+    width: 64px;
+    border-style: solid;
+    border-color: rgb(204,204,204);
+    border-radius:2px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 8px;
+    box-shadow: rgb(238, 238, 238);
+}
+.mid-icon3{
+    position: relative;
+    margin-left: 0;
+    height: 24px;
+    width: 24px;
+}
+.mid-but3 .tooltip,.mid-but4 .tooltip,.create .tooltip,
+.YouTube-Apps .tooltip,.notification .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top:4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius:2px ;
+    font-size: 12px;
+    bottom:-20px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.mid-but3:hover .tooltip,.mid-but4:hover .tooltip,
+.create:hover .tooltip,
+.YouTube-Apps:hover .tooltip,
+.notification:hover .tooltip{
+    opacity: 1;
+    cursor: pointer;
+}
+.mid-but4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: rgb(247,247,247);
+}
+
+.mid-icon4{
+    height: 24px;
+    width: 24px;
+    margin-left: 2.5px;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    ;
+}
+.left-icon1{
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 24px;
+}
+.left-icon2{
+    height: 20px;
+}
